@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title> Box Sizing</title>
+        <style>
+            * {
+                box-sizing: border-box; /* pode tb fazer usando seletor universal, assim todos os elementos da 
+                sua pagína vão ter o box sizing: border-box
+                sempre q vc definir  um elemento e vc colocar a altura e largura
+                 essa altura e largura ja vai contemplar o conteudo,pddinge borda */
+
+            }
+            body {
+                background-color: black;
+                color: white;
+               /* box-sizing: border-box;  se colocar no body n tranmite por herança*/
+            }
+
+            .caixa {
+                height: 100px;
+                width: 100px;
+                background-color: crimson;
+                padding: 10px;
+                border: 5px solid white;
+                /*box-sizing: content-box; content-box ´o valor padrão, 
+                quando eu defino a altura e largura,da minha caixa(box) 
+                essa altura e larguraesta sendo usada para definir
+                 da box-sizing ou seja antes de aplicar ao padding,borda
+                 então nessa caso a box aponta para content-box padrão significa que
+                 quando eu falo q a altura é 80px e largura 80 px ele ta referenciando
+                 ao conteúdo e não ao padding e não a borda em outras palavras significa que 
+                  que o conteudo era 80por 80 somado com o padding e borda dara 
+                  o tamanho completo da caixa*/
+                  /*box-sizing: border-box;  caixa que agrupa o conteudo,padding e borda
+                  ou seja vc n tem um padding box q vai pegar o conteudo mais um padding
+                  mais tem a posibilidade de considera a largura em relação
+                  quando usso essa propriedade border-box significa que a altura de 80px e a largura80px
+                   isso inclui o conteudo ,paddinge borda as 3 partes esta do box -model esta dentro dessa 
+                   altura,largura de 80px que faz com q a caxa fique melhor*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="caixa">
+            Conteúdo
+        </div>
+    </body>
+</html>

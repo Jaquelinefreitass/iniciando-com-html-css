@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flexbox: ALinhamento Self</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+
+            .flex-container {
+                height: 400px; 
+                border: solid crimson 5px;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+            .flex-container > div {      
+                border: solid cyan 5px;
+                padding: 5px;
+                margin: 5px;
+            }
+            .cima {
+                align-self: flex-start;
+            }
+
+            .baixo {
+               align-self: flex-end; 
+            }
+
+            .nao-funciona-no-flex {  /* ignorada no flexbox*/
+                justify-self:flex-end;
+
+            }
+
+              
+
+        </style>
+    </head>
+    <body>
+        <h1>Flexbox:ALinhamento Self</h1>
+        
+                <div class="flex-container">
+                    <div class="baixo">1</div>
+                    <div>2</div>
+                    <div class="cima">3</div>
+                    <div class="nao-funciona-no-flex">4</div>
+                    <div class="baixo">5</div>
+                    
+                </div>
+            </body>
+        </html>
+                
+           
+            
+            
+
+
+
+            
+        

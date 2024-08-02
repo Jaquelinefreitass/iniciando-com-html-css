@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>especificidade CSS</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+            .caixa {
+                height: 100px;
+                width: 100px;
+                background-color: coral !important; /* REGRA PASSA POR CIMA, N É INTERESSANTE FAZER ISSO
+                tente avisar essa abordagem,porq vc ta pasando por cima do que é mais importante
+                que é estabelecer seletores mais especificos, no css um dos aspectosmais importante
+                é essa questão da definição dos seletores de como vc vai selecionar as tags
+                apartir do css para aplicar determinadas regras visuais */
+            }
+            /*SE COLOCAR SEPARADO ,QUANDO TEM UM ESPAÇO TEMOS UMA COMBINAÇÃO DE SELETORES(DESCENDENTES)OU SEJA SELECIONA 
+            ALGUM ELEMENTO QUE TENHA CLASSE AZUL QUE ESTA DENTRO DE UMA DIV
+            MAIS NESSE CASO N É PARA FAEZR ISSO ,EU QUERO SELECIONAR UMA DIV QUE TEM A CLASSE CSS AZUL ENTÃO COLOCA JUNTO
+             (div.azul)*/
+            div.azul {
+                background-color: cornflowerblue;
+
+            }
+            #unico {
+                background: linear-gradient(to right, red, yellow);
+            } 
+
+            .advertencia {
+                background-color: goldenrod;
+                padding: 5px;
+            }
+
+            .importante {
+                background-color: crimson;
+            }
+            
+
+
+        </style>
+    </head>
+    <body>
+        <h2>1) Regra com !important</h2>
+        <div class="caixa azul">Cuidado com !important</div>
+        <h2>2) Seletor Mais Específico</h2>
+        <div id="unico" class="advertencia">Quem vai ganhar?</div>
+        <h2>3)  Última Regra Aplicada(Empate)</h2>
+        <div class="advertencia importante">
+            Essa informação é sigilosa!
+        </div>
+    </body>
+</html>

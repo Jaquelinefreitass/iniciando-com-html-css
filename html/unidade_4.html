@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Unidade CSS #4</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+            .externa {
+                position: relative;
+                background-color: orange;
+                height: 400px;
+                width: 400px;
+                padding: 50px;
+               
+                
+            }
+
+            .interna {
+                background-color: mediumvioletred;
+                height: 70%;
+                width: 70%;
+                position: static; /*vai usar o conteudo apenas n vai considera o padding*/
+                position: relative; /*vai usar o conteudo apenas n vai considera o padding*/
+                position: absolute; /*vai olha a div externa para saber para saber se ela é uma div relativa
+                como n é ele considera a pagina inteira, mais quero q ele olhe para a pagina .externa (considera o conteudo + o padding)*/
+               /* top: 0;
+                left: 0 
+                bottom:0;
+                right:0*/
+                position: fixed;/*(viewport)*/
+            }
+            
+           
+        </style>
+    </head>
+    <body>
+       <div class="externa">
+           <div class="interna"></div>
+       </div>
+    </body>
+</html>
+
+   

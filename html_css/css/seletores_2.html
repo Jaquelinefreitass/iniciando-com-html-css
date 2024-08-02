@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Seletors #03</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+            div:nth-child(even){
+                background-color: rebeccapurple;
+            }
+            div:nth-child(odd){
+                background-color:plum;
+            }
+        div:hover {
+            background-color: purple;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid  greenyellow;
+
+        }
+
+        p::first-letter {
+            font-size: 50px;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+        .cor {
+            color: brown;
+        }
+        .cor2 {
+            color: green;
+        }
+              
+
+        </style>
+    </head>
+    <body>
+        <h2>Seletores de Pseudo-Classs </h2>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <input type="text">
+
+        <h2>Seletores de Pseudo-Elementos</h2>
+        <p>Maecenas sem purus, laoreet eu egestas a, mollis ut lorem. Aliquam at maximus nisl, vestibulum elementum ex. Integer consequat sapien eu eros molestie congue id sed purus. Praesent eu pellentesque nunc. Suspendisse in eros vitae eros hendrerit ullamcorper quis in erat. <span class="cor2">Aliquam arcu enim</span>, tincidunt non ex eu, tincidunt lacinia diam. Fusce neque nunc, tincidunt id est ut, hendrerit elementum arcu. Suspendisse mollis blandit eros, ac posuere metus viverra et. </p>
+        <p>Nulla facilisi. <span class="cor">Phasellus sed feugiat</span> ipsum. Etiam tortor tortor, imperdiet at tempor at, viverra et odio. Nam eget mi a massa mattis scelerisque. Vivamus efficitur enim at lectus varius sollicitudin a ut orci. Donec ac odio consequat, rhoncus eros at, porttitor turpis. Donec sagittis malesuada tellus, at semper risus lacinia ac. Mauris et mi id neque tempus euismod.</p>
+    </body>
+</html>
